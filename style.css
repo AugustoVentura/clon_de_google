@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    float: right;
+    display: flex;
+    gap: 11px;
+}
+
+.login{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-right: 17px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+
+.login1{
+    background-color:#fff;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 13px;
+    height: 41px;
+    width: 41px;
+}
+
+.login1:hover{
+    background-color: #e9e9e9;
+}
+
+.apps{
+    width: 17px;
+    height: 17px;
+    margin-top: 8px;
+    margin-right: 11px;
+    margin-left: 9px;
+    margin-bottom: 5px;
+}
+
+.apps1{
+    background-color:#fff;
+    border-radius: 50%;
+    margin-top: 14px;
+    height: 35px;
+    width: 35px;
+}
+
+.apps1:hover{
+    background-color: #e9e9e9;
+}
+
+.image{
+    text-decoration: none;
+    color:#000;
+    font-size:13px;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+.image:hover{
+    text-decoration: underline;
+}
+
+.gmail{
+    text-decoration: none;
+    color:#000;
+    font-size: 13px;
+    margin-top: 22px;
+    margin-right: 4px;
+}
+
+.gmail:hover{
+    text-decoration: underline;
+}
+
+#menu{
+    display: none;
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+section{
+    padding-top: 20vh;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 25vh;
+}
+
+.google1{
+    width: 272px;
+    height: 92px;
+    margin-top: 38px;
+}
+
+#search{
+    width: 100vw;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.buscador{
+    display: flex;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #d9d9d9;
+    width: 584px;
+    height: 45px;
+    border-radius: 30px;
+}
+
+.buscador:hover{
+    border: 1px solid #b9b9b9;
+}
+
+.lupa{
+    width: 17px;
+    height: 17px;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+.microfono{
+    width: 24px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.bgoogle{
+    width: 153px;
+    height: 36px;
+    margin-top: 30px;
+    margin-right: 14px;
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9;
+}
+
+.blucky{
+    width: 153px;
+    height: 36px;
+    margin-right: 9px;
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9;
+}
+
+.bgoogle:hover{
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.blucky:hover{
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.right{
+    display: flex;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #efefef;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 94px;
+    color: #70757A;
+}
+
+p{
+    height: 48px;
+    font-size: 15px;
+    border-bottom: 1px solid #dadce0;
+    display: block;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 15px 11px 15px 15px;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+.privacy{
+    margin-left: 40.55vw;
+}
+
+@media screen and (max-width:768px) {
+    .navbar{flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;  
+    width: 100%;
+    float:left;
+    }
+
+    .menu{
+        display: block;
+        margin: 15px;
+    }
+
+    .menu:hover{
+        cursor: pointer;
+        padding: 1px;
+    }
+
+    #menu:checked ~ .google{
+        margin:17px;
+    }
+
+    #menu:checked ~ .navbar{
+        margin:17px;
+    }
+
+    .google1{
+        float: center;
+    }
+
+    .buscador{
+        width:500px;
+    }
+
+    .page{
+        padding: 100px;
+        position: fixed;
+    }
+
+    .navbar{
+        margin-left: -70%;
+    }
+
+    .gmail{
+        color: #848484;
+    }
+
+    .image{
+        color: #848484;
+    }
+
+    .privacy{
+        margin-left:0;
+    }
+
+    ul li{
+        padding:15px 7px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1005px){
+    .privacy{
+        margin-left: 15vw;
+    }
+}
